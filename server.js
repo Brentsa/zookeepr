@@ -36,6 +36,14 @@ function filterByQuery(query, animalsArray){
     return filteredResults;
 }
 
+function findByID(id, animalsArray){
+    for(var i = 0; i < animalsArray.length; i++){
+        if(animalsArray[i].id == id){
+            return animalsArray[i];
+        }
+    }
+}
+
 app.get('/api/animals', (req, res)=>{
     let results = animals;
     
@@ -43,10 +51,20 @@ app.get('/api/animals', (req, res)=>{
         results = filterByQuery(req.query, results);
     }
     
-    console.log(animals);
-
     res.json(results);
 })
+
+app.get('/api/animals/:id', (req, res) =>{
+    let result = findByID(req.params.id, animals);
+
+    if(result){
+        res.json(result);
+    }
+    else{
+        res.send(404);
+    }
+    
+});
 
 app.listen(PORT, () =>{
     console.log(`API server now on port ${PORT}!`);
