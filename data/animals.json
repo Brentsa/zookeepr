@@ -108,6 +108,48 @@
         "loving"
       ],
       "id": "10"
+    },
+    {
+      "name": "Larry",
+      "species": "lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany"
+      ],
+      "id": "11"
+    },
+    {
+      "name": "Arrow",
+      "species": "tiger",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "brave",
+        "rash",
+        "loving"
+      ],
+      "id": "12"
+    },
+    {
+      "name": "Andre",
+      "species": "lion",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "brave",
+        "rash",
+        "zany"
+      ],
+      "id": "13"
+    },
+    {
+      "name": "Andy",
+      "species": "armadillo",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "brash",
+        "loving"
+      ],
+      "id": "14"
     }
   ]
 }
