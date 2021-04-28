@@ -150,6 +150,17 @@
         "loving"
       ],
       "id": "14"
+    },
+    {
+      "name": "Henry",
+      "species": "Giraffe",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "anxious"
+      ],
+      "id": "15"
     }
   ]
 }

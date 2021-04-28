@@ -8,6 +8,8 @@ const app = express();
 app.use(express.urlencoded({extended:true}));
 //parse incoming JSON data
 app.use(express.json());
+//serves static assets from the public directory
+app.use(express.static('public'));
 
 const PORT = process.env.PORT || 3001;
 
@@ -69,6 +71,10 @@ function validateAnimal(animal){
 
     return true;
 }
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/index.html"));
+})
 
 app.get('/api/animals', (req, res)=>{
     let results = animals;
