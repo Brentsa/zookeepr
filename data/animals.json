@@ -161,6 +161,16 @@
         "anxious"
       ],
       "id": "15"
+    },
+    {
+      "name": "Scaley",
+      "species": "snake",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "goofy"
+      ],
+      "id": "16"
     }
   ]
 }
