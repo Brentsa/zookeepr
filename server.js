@@ -72,10 +72,6 @@ function validateAnimal(animal){
     return true;
 }
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "./public/index.html"));
-})
-
 app.get('/api/animals', (req, res)=>{
     let results = animals;
     
@@ -84,7 +80,7 @@ app.get('/api/animals', (req, res)=>{
     }
     
     res.json(results);
-})
+});
 
 app.get('/api/animals/:id', (req, res) =>{
     let result = findByID(req.params.id, animals);
@@ -108,6 +104,22 @@ app.post('/api/animals', (req, res) =>{
         const animal = createNewAnimal(req.body, animals);
         res.json(req.body);
     }
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/index.html"));
+});
+
+app.get('/animals', (req, res) =>{
+    res.sendFile(path.join(__dirname, "./public/animals.html"));
+});
+
+app.get('/zookeepers', (req, res) =>{
+    res.sendFile(path.join(__dirname, "./public/zookeepers.html"));
+});
+
+app.get('*', (req, res) =>{
+    res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
 app.listen(PORT, () =>{
