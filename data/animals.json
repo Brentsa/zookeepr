@@ -171,6 +171,17 @@
         "goofy"
       ],
       "id": "16"
+    },
+    {
+      "name": "Homer",
+      "species": "Pig",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "anxious",
+        "loving",
+        "goofy"
+      ],
+      "id": "17"
     }
   ]
 }
