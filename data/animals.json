@@ -182,6 +182,17 @@
         "goofy"
       ],
       "id": "17"
+    },
+    {
+      "name": "Scamp",
+      "species": "Coyote",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry",
+        "anxious",
+        "loving"
+      ],
+      "id": "18"
     }
   ]
 }
